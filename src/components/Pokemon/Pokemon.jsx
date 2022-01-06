@@ -9,8 +9,8 @@ export default function Pokemon(props){
                 {props.player.name}   
             </h1>
             <h2>HP: {props.player.hp}</h2>
-            <button onClick={() => console.log('attack')}>Attack!</button>
             <img src={props.player.img} alt="" />
+            <button onClick={() => props.attack()}>Attack!</button>
         </div>
 
     )
